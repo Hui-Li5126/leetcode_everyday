@@ -11,7 +11,7 @@ class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         if not root:
             return None
-        if root == p or root == q:
+        if root in (p, q):
             return root
         #Divde
         left = self.lowestCommonAncestor(root.left, p, q)
@@ -19,7 +19,4 @@ class Solution:
         #Conquer
         if left and right:
             return root
-        if not left:
-            return right
-        if not right:
-            return left
+        return left or right
