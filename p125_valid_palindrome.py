@@ -13,3 +13,5 @@ Type "help", "copyright", "credits" or "license()" for more information.
             left += 1
             right -= 1
         return True
+
+#time complexity O(N), space complexity O(1) two pointers

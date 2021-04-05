@@ -60,3 +60,5 @@ Type "help", "copyright", "credits" or "license()" for more information.
             remove -= 1
     
         return len(s) - remove
+
+# tc: O(N), space complexity: O(N)

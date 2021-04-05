@@ -37,3 +37,6 @@ Type "help", "copyright", "credits" or "license()" for more information.
         while left < right:
             A[left], A[right] = A[right], A[left]
             left, right = left + 2, right - 2
+
+#time complexity O(n), count O(n), partition O(n), interleave O(n)
+#思路：先数正数负数，再把多的那一个放前半部分，少的放后半部分，再interleave

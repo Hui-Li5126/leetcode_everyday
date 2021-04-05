@@ -45,6 +45,10 @@ class Solution:
                 right += 1
         return right - left - 1, left + 1
 
+#time complexity O(n^2)
+#steps: for every character, uses it as center and then uses two pointers left and right to spread
+#           also uses abba format to spread, return the length, and starting postion 
+
 
 >>> #dynamic programming
 def longestPalindrom(s):
