@@ -40,5 +40,4 @@ class Solution:
     def get_distance(self, a, b):
         return (a.x - b.x)**2 + (a.y - b.y)**2
 
-#time complexity: O(n+klogn), for the first foor loop, build heap O(n), second for loop, heappop logn, pop k times, so it's O(klogn)
-#when n>>k, it's O(n), better than O(nlogk)
+#time complexity: O(nlogn+klogn), for the first foor loop, build heap O(nlogn), second for loop, heappop logn, pop k times, so it's O(klogn)
