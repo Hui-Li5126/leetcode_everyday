@@ -1,5 +1,5 @@
-Python 3.8.3 (default, May 19 2020, 06:50:17) [MSC v.1916 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
+Given two non-negative integers, num1 and num2 represented as string, return the sum of num1 and num2 as a string.
+
 >>> class Solution:
     def addStrings(self, num1: str, num2: str) -> str:
         res = []
@@ -22,3 +22,5 @@ Type "help", "copyright", "credits" or "license()" for more information.
         return ''.join(str(x) for x in res[::-1])
 
     #TC: O(max(N1, N2)), space complexity: the same
+
+#similar to lintcode 1343 sum of two strings, except the latter doesn't carry the 1 to next digit
