@@ -26,27 +26,27 @@ class Solution:
         return res
         
         
-    def quick_select(self, nums, left, right, k):
+    def quick_select(self, nums, start, end, k):
         
-        if left == right:
+        if start == end:
             return
         
-        pivot = nums[left]
-        i, j = left, right
-        while i <= j:
-            while i <= j and nums[i] > pivot:
-                i += 1
+        pivot = nums[(start + end) // 2]
+        left, right = start, end
+        while left <= right:
+            while left <= right and nums[left] > pivot:  #左边放大的
+                left += 1
             
-            while i <= j and nums[j] < pivot:
-                j -= 1
+            while left <= right and nums[right] < pivot:
+                right -= 1
             
-            if i <= j:
-                nums[i], nums[j] = nums[j], nums[i]
-                i += 1
-                j -= 1
+            if left <= right:
+                nums[left], nums[right] = nums[right], nums[left]
+                left += 1
+                right -= 1
                 
                 
-        if j - left + 1 >= k:
-            self.quick_select(nums, left, j, k)
-        if i - left + 1 <= k:
-            self.quick_select(nums, i, right, k - (i - left))
+        if k <= right:
+            self.quick_select(nums, start, right, k)
+        if k >= left:
+            self.quick_select(nums, left, end, k )
