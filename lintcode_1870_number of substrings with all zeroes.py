@@ -1,5 +1,29 @@
-Python 3.8.3 (default, May 19 2020, 06:50:17) [MSC v.1916 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
+Description
+Given a string str containing only 0 or 1, please return the number of substrings that consist of 0 .
+
+1<=|str|<=30000
+
+Example
+Example 1:
+
+Input:
+"00010011"
+Output:
+9
+Explanation:
+There are 5 substrings of "0",
+There are 3 substrings of "00",
+There is 1 substring of "000".
+So return 9
+Example 2:
+
+Input:
+"010010"
+Output:
+5
+
+
+
 >>> class Solution:
     """
     @param str: the string

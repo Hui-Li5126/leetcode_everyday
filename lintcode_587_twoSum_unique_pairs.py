@@ -1,5 +1,27 @@
-Python 3.8.3 (default, May 19 2020, 06:50:17) [MSC v.1916 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
+Description
+Given an array of integers, find how many unique pairs in the array such that their sum is equal to a specific target number. 
+Please return the number of pairs.
+
+Example 1:
+Input: nums = [1,1,2,45,46,46], target = 47 
+Output: 2
+Explanation:
+
+1 + 46 = 47
+2 + 45 = 47
+
+Example 2:
+
+Input: nums = [1,1], target = 2 
+Output: 1
+Explanation:
+1 + 1 = 2
+
+
+
+
+
+
 >>> class Solution:
     """
     @param nums: an array of integer

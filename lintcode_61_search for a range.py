@@ -4,6 +4,36 @@ Given a sorted array of n integers, find the starting and ending position of a g
 
 If the target is not found in the array, return [-1, -1].
 
+Example
+Example 1:
+
+Input:
+
+array = []
+target = 9
+Output:
+
+[-1,-1]
+Explanation:
+
+9 is not in the array.
+
+Example 2:
+
+Input:
+
+array = [5, 7, 7, 8, 8, 10]
+target = 8
+Output:
+
+[3,4]
+Explanation:
+
+The [3,4] subinterval of the array 1 has the value 8.
+
+Challenge
+O(log n) time.
+
 
 >>> class Solution:
     """

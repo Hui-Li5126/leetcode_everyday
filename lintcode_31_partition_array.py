@@ -1,5 +1,20 @@
-Python 3.8.3 (default, May 19 2020, 06:50:17) [MSC v.1916 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
+Description
+Given an array nums of integers and an int k, partition the array (i.e move the elements in "nums") such that:
+
+All elements < k are moved to the left
+All elements >= k are moved to the right
+Return the partitioning index, i.e the first index i nums[i] >= k.
+
+Example:
+nums = [3,2,2,1]
+k = 2
+output: 1
+
+Explanation:
+
+the real array is[1,2,2,3].So return 1.
+
+
 >>> class Solution:
     """
     @param nums: The integer array you should partition

@@ -1,5 +1,25 @@
-Python 3.8.3 (default, May 19 2020, 06:50:17) [MSC v.1916 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
+Description
+A child is running up a staircase with n steps, and can hop either 1 step, 2 steps, or 3 steps at a time. Implement a method to count 
+how many possible ways the child can run up the stairs.
+
+For n=0, we think the answer is 1.
+
+Example
+Example 1:
+
+Input: 3
+Output: 4
+Explanation: 1 + 1 + 1 = 2 + 1 = 1 + 2 = 3 = 3 , there are 4 ways.
+Example 2:
+
+Input: 4
+Output: 7
+Explanation: 1 + 1 + 1 + 1 = 1 + 1 + 2 = 1 + 2 + 1 = 2 + 1 + 1 = 
+
+
+
+
+
 >>> class Solution:
     """
     @param n: An integer

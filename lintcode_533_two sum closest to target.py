@@ -5,6 +5,20 @@ sum is closest to a given number, target.
 Return the absolute value of difference between the sum of the two numbers and
 the target.
 
+Example 1:
+Input:  nums = [-1, 2, 1, -4] and target = 4
+Output: 1
+Explanation:
+The minimum difference is 1. (4 - (2 + 1) = 1).
+
+Example 2:
+Input:  nums = [-1, -1, -1, -4] and target = 4
+Output: 6
+Explanation:
+The minimum difference is 6. (4 - (- 1 - 1) = 6).
+
+
+
 class Solution:
     """
     @param nums: an integer array

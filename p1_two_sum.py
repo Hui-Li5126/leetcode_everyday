@@ -10,14 +10,46 @@
         """
         h = {}
         for i, num in enumerate(nums):
-            n = target - num
-            if n not in h:
+            partner = target - num
+            if partner not in h:
                 h[num] = i
             else:
-                return [h[n], i]
+                return [h[partner], i]
         
         
 #time complexity o(n), space complexity o(n)
+
+
+#sort first then two pointers
+
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        if not nums:
+            return [-1, -1]
+        
+        numbers = [(number, index) for index, number in enumerate(nums)]
+        numbers.sort()
+        
+        left, right = 0, len(numbers) - 1
+        while left < right:
+            if numbers[left][0] + numbers[right][0] > target:
+                right -= 1
+            elif numbers[left][0] + numbers[right][0] < target:
+                left += 1
+            else:
+                return sorted([numbers[left][1], numbers[right][1]])
+            
+        return [-1, -1]
+
+
+
+
+
 
 #p2: lintcode 608 two sum II input array is sorted
 

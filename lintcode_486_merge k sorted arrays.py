@@ -8,6 +8,18 @@ Input:
   ]
 Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
+
+Example 2:
+
+Input:
+  [
+    [1,2,3],
+    [1,2]
+  ]
+Output: [1,1,2,2,3]
+
+
+
 >>> import heapq
 
 class Solution:

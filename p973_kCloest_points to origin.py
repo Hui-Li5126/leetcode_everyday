@@ -29,3 +29,16 @@ Type "help", "copyright", "credits" or "license()" for more information.
             self.quick_select(nums, start, right, k)
         if k >= left:
             self.quick_select(nums, left, end, k )
+
+
+import heapq
+class Solution:
+    def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+        heap = []
+        ans = []
+        for i in points:
+            distance = sqrt(i[0]**2 +i[1]**2)
+            heapq.heappush(heap,(distance, i))
+        for i in range(k):
+            ans.append(heapq.heappop(heap)[1])
+        return ans

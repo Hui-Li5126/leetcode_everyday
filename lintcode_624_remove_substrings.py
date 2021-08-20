@@ -1,5 +1,29 @@
-Python 3.8.3 (default, May 19 2020, 06:50:17) [MSC v.1916 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
+Description
+Given a string s and a set of n substrings. You are supposed to remove every instance of those n substrings from s so that s is 
+of the minimum length and output this minimum length.
+
+Example
+Example 1:
+
+Input:
+"ccdaabcdbb"
+["ab","cd"]
+Output:
+2
+Explanation: 
+ccdaabcdbb -> ccdacdbb -> cacdbb -> cabb -> cb (length = 2)
+Example 2:
+
+Input:
+"abcabd"
+["ab","abcd"]
+Output:
+0
+Explanation: 
+abcabd -> abcd -> "" (length = 0)
+
+
+
 >>> class Solution:
     """
     @param: s: a string

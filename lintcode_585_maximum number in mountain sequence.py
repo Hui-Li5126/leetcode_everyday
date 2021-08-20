@@ -1,5 +1,16 @@
-Python 3.8.3 (default, May 19 2020, 06:50:17) [MSC v.1916 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
+Description
+Given a mountain sequence of n integers which increase firstly and then decrease, find the mountain top(Maximum).
+
+Example 1:
+Input: nums = [1, 2, 4, 8, 6, 3] 
+Output: 8
+
+Example 2:
+Input: nums = [10, 9, 8, 7], 
+Output: 10
+
+
+
 >>> class Solution:
     """
     @param nums: a mountain sequence which increase firstly and then decrease
